@@ -9,7 +9,7 @@ export default {
   word: '',
 
   async getPics() {
-    const url = `https://pixabay.com/api/?image_type=photo&orientation=horizontal&q=${this.word}&page=${this.page}&per_page=12&key=${this.api_key}`;
+    const url = `https://pixabay.com/api/?image_type=photo&orientation=horizontal&q=${this.word}&page=${this.page}&per_page=12&key=${this.key}`;
 
     try {
       const pics = await axios.get(url);
